@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse ve Accordion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 70px;
+      }
+    </style>
+</head>
+<body>
+    <!--butona basınca card yapısının açılmasını sağlayacağız butona collapse özelliği kazandırıyoruz-->
+    <!--collapse tıklayınca açılıyor tıklayınca kapanıyor özellik katıyor-->
+    <p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#content">Buton</button>
+        <a href="" class="btn btn-secondary" data-toggle="collapse" data-target="#content">Link</a>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".card">Multiple</button>
+    </p>
+     
+    <!--collapse dediğimiz için içerik başlangıçta görünmüyor collapse ifadesi içeriği gizliyor collapse show dersek ilk başta görünür yapar-->
+    <div class="card collapse show" id="content">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet. deneme 1
+        </div>
+    </div>
+    <br><br>
+    <div class="card collapse show" id="content2">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet. deneme 2
+        </div>
+    </div>
+    <br><br>
+    <hr
+    <!--accordion oluşturma accordionda birine tıklayınca açılıyor açık olan kapanıyor-->
+       <div id="accordion">
+            <div class="card mb-1">
+                 <!--bu tanım birinci collapseyi açacak-->
+                  <div class="card-header bg-secondary">
+                      <a href="#collapseOne" class="card-link" data-toggle="collapse">Collapse One</a>
+                  </div>
+
+                  <!--bu collapse div tanımını data-parent accordiın ile ilişkilendiriyoruz collapse show dediğimiz için açılışta gösteriyor-->
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                       <div class="card-body">
+                        Lorem ipsum dolor sit amet. deneme 1
+                       </div>
+                    </div>
+            </div>
+            <div class="card mb-1">
+                <!--bu tanım birinci collapseyi açacak-->
+                 <div class="card-header bg-warning">
+                     <a href="#collapseTwo" class="card-link text-white" data-toggle="collapse">Collapse Two</a>
+                 </div>
+
+                 <!--bu collapse div tanımını data-parent accordiın ile ilişkilendiriyoruz-->
+                   <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                       Lorem ipsum dolor sit amet. deneme 2
+                      </div>
+                   </div>
+           </div>
+           <div class="card">
+            <!--bu tanım birinci collapseyi açacak-->
+             <div class="card-header bg-danger">
+                 <a href="#collapseThree" class="card-link text-white" data-toggle="collapse">Collapse Three</a>
+             </div>
+
+             <!--bu collapse div tanımını data-parent accordiın ile ilişkilendiriyoruz-->
+               <div id="collapseThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                   Lorem ipsum dolor sit amet. deneme 3
+                  </div>
+               </div>
+       </div>
+       </div>
+
+
+
+
+
+
+     <!--script başlangıçları-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+     crossorigin="anonymous"></script>
+ 
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+     crossorigin="anonymous"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+     crossorigin="anonymous"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+     crossorigin="anonymous"></script>
+</body>
+</html>

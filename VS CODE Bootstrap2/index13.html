@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 70px;
+      }
+    </style>
+</head>
+<body>
+    <!--bu ifadeleri form içine aldık çünkü bilgileri taşırken form aracılığı ile taşırız yada div oluşturabiliriz-->
+    <form class="w-50 mb-5"> <!--class w-50 dedik sayfanın yarısını kaplar-->
+    <div class="mb-3">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-info">Giriş</button>
+</form>
+<hr>
+<form class="w-50 mb-5">
+    <!--satr oluşturduk bir satır 12 kolondan oluşur-->
+<div class="row g-0"> <!--g-0 dediğimiz için iki sütun arasındaki boşluğu alır g-0 demeseydik sütunlar arasında boşluk yer alırdı g-0 g-1 g-2 gibi değerler vererek boşluğu ayarlarız-->
+    <!--sütun oluşturduk-->
+<div class="col">
+<input type="text" class="form-control">
+</div>
+<div class="col">
+    <input type="text" class="form-control">
+    </div>
+</div>
+</form>
+<hr>
+<form class="mb-5">
+<div class="row g-3"> <!--1. Satır-->
+    <!--col-6 dediğim için bir satır 12 parçadan oluşur iki sütun bu değerleri doldurduğu için diğer iki sütun alt satıra geçer-->
+    <div class="col-6">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="form-control">
+    </div>
+    <div class="col-12"> <!--col-12 dediğim için tüm satırı kapladı-->
+        <label for="adres">Adres</label>
+        <textarea name="asdres" id="adres" class="form-control"></textarea>
+    </div>
+    <div class="col-6">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" class="form-control">
+    </div>
+    <div class="col-4">
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" class="form-control">
+    </div>
+    <div class="col-2">
+        <label for="zip">Zip</label>
+        <input type="text" name="zip" id="zip" class="form-control">
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+        <input type="checkbox" name="notification" id="notification" class="form-check-input">
+        <label for="notification" class="form-check-label">Notification</label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-block">Submit</button> <!--btn-block dediğimiz için tüm satırı kapladı block elemanlar tüm satırı kaplar-->
+    </div>
+</div>
+</form>
+<hr>
+<!--etiketler alt alta değil yan yana gelmesi için yapılan işlemler-->
+<form class="mb-5">
+<div class="row mb-3">
+<label class="col-2" for="email">Email</label>
+<div class="col-10">
+    <input type="email" name="email" id="email" class="form-control">
+</div>
+</div>
+<div class="row mb-3">
+    <label class="col-2" for="password">Password</label>
+    <div class="col-10">
+        <input type="password" name="password" id="password" class="form-control">
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-2" for="">Gender</label>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <!--offset-2 dememizin sebebi buton sol baştan yaslı gelir biz butonu radio butonlar ile aynı hizaya getirmek için offset-2 diyoruz radio butonlar
+        ile aynı hizadan başlar 2lik kolonları öteleyip 10luk kolondan başlatıyoruz-->
+        <div class="col-10 offset-2">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+     <!--script kodları başlangıcı-->
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+     crossorigin="anonymous"
+   ></script>
+</body>
+</html>

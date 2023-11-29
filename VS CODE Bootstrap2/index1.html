@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Dahil Etme</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" <!--css dosyamızı dahil ettik-->
+   
+</head>
+<body>
+    <!--container dediğimizde sayfanın hepsini kaplamıyor bootstrap layout container tablosuna bakınca hangi aralıklarda nasıl alan kapladığı yazıyor
+    container-fluid dediğimizde sayfanın tamamını kaplıyor-->
+    <div class="container-fluid bg-warning">
+        <h1>Deneme</h1>
+    </div>
+    <hr>
+    <div class="container bg-danger">
+        <div class="row bg-secondary text-center" style="height: 150px;"> <!--text-center yazıları ortaya aldı-->
+            <div class="col-lg bg-primary text-light align-self-start" style="height: 50px;">
+                1. Sütun
+            </div>
+            <div class="col-lg bg-info text-light align-self-center" style="height: 50px;">
+                2. Sütun
+            </div>
+            <div class="col-lg bg-warning text-light align-self-end" style="height: 50px;">
+                3. Sütun
+            </div>
+        </div>
+    </div>
+    <!--Bir satır 12 parçadan oluşur-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="JS/bootstrap.min.js"></script> <!--java script dosyamızı dahil ettik-->
+</body>
+</html>

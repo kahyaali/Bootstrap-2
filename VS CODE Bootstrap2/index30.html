@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignments ver Orders</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 70px;
+      }
+    </style>
+</head>
+<body>
+    <!--align-items diey olarak yani y ekseninde hizalama yapar-->
+    <!--Vertical Alignment Dikey Hizalama-->
+    <!--yatayda justify dikeyde align kullanılır hizalama için-->
+    <div class="container my-4">
+        <div class="row align-items-start" style="height: 150px; border: 1px solid grey;margin-bottom:2px;">
+            <div class="col">column 1</div>
+            <div class="col">column 2</div>
+            <div class="col">column 3</div>
+        </div>
+        <div class="row align-items-center" style="height: 150px; border: 1px solid grey;margin-bottom:2px;">
+            <div class="col">column 1</div>
+            <div class="col">column 2</div>
+            <div class="col">column 3</div>
+        </div>
+        <div class="row align-items-end" style="height: 150px; border: 1px solid grey;margin-bottom:2px;">
+            <div class="col">column 1</div>
+            <div class="col">column 2</div>
+            <div class="col">column 3</div>
+        </div>
+    </div>
+    <hr>
+    <!--Horizontal Alignment-->
+    <!--yatayda justify dikeyde align kullanılır hizalama için-->
+    <div class="container my-4">
+        <div class="row justify-content-start mb-3">
+            <div class="col-4 bg-info">column 1</div>
+            <div class="col-4 bg-info">column 2</div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-4 bg-info">column 1</div>
+            <div class="col-4 bg-info">column 2</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4 bg-info">column 1</div>
+            <div class="col-4 bg-info">column 2</div>
+        </div>
+    </div>
+    <hr>
+    <!--Horizontal Alignment Yatay Hizalama-->
+    <!--yatayda justify dikeyde align kullanılır hizalama için-->
+    <div class="container my-4">
+        <div class="row justify-content-around mb-3"> <!--around soldan 1 birim sağdan 1 birim ve 2 element arası 2 birim boşluk brakır-->
+            <div class="col-4 bg-info">column 1</div>
+            <div class="col-4 bg-info">column 2</div>
+        </div>
+        <div class="row justify-content-between mb-3"> <!--between sağdan soldan boşluk bırakılmaz tüm boşluk ortada toplanır-->
+            <div class="col-4 bg-info">column 1</div>
+            <div class="col-4 bg-info">column 2</div>
+        </div>
+        <div class="row justify-content-evenly"> <!--evenly sağdan soldan ve ortada eşit boşluklar bırakılarak elementler hizalanır -->
+            <div class="col-4 bg-info">column 1</div>
+            <div class="col-4 bg-info">column 2</div>
+        </div>
+    </div>
+    <hr>
+    <!--Ordering Sıralama -1'den 6'ya kadar değer verilebilir-->
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col bg-warning order-3">column 1</div>
+            <div class="col bg-warning order-2">column 2</div>
+            <div class="col bg-warning order-1">column 3</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col bg-warning order-last">column 1</div>
+            <div class="col bg-warning order-2">column 2</div>
+            <div class="col bg-warning order-first">column 3</div>
+        </div>
+    </div>
+     <hr>
+     <!--Offseting-->
+     <div class="container">
+        <div class="row mb-3">
+            <div class="col-4 bg-warning">column 1</div>
+            <div class="col-4 offset-4 bg-danger">column 2</div> <!--offset-4 demek 4 kolon ötele ve yaz demek-->
+        </div>
+        <div class="row mb-3">
+            <div class="col-4 bg-success">column 1</div>
+            <div class="col-4 offset-2 bg-primary">column 2</div> <!--offset-2 demek 2 kolon ötele ve yaz demek-->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--script kodları başlangıcı-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"></script>
+   
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"></script>
+</body>
+</html>

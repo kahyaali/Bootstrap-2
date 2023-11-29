@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges ve Breadcrumbs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 70px;
+      }
+    </style>
+</head>
+<body>
+    <!--Badge Kullanımı-->
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-warning">Warning</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-info">Info</span>
+    <span class="badge bg-dark">Dark</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-light text-dark">Light</span>
+    <hr>
+    <span class="badge rounded-pill bg-primary">Primary</span>
+    <span class="badge rounded-pill bg-secondary">Secondary</span>
+    <span class="badge rounded-pill bg-warning">Warning</span>
+    <span class="badge rounded-pill bg-danger">Danger</span>
+    <span class="badge rounded-pill bg-info">Info</span>
+    <span class="badge rounded-pill bg-dark">Dark</span>
+    <span class="badge rounded-pill bg-success">Success</span>
+    <span class="badge rounded-pill bg-light text-dark">Light</span>
+    <hr>
+    <h1> Deneme <span class="badge bg-secondary">New</span></h1>
+    <hr>
+    <button type="button" class="btn btn-primary">
+        Message <span class="badge bg-info">5</span>
+    </button>
+<!--BreadCrumb Kullanımı -->
+<hr>
+<nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+</nav>
+<hr>
+<!--breadcrumb-item deyince menüler arasına / işaretini koyuyor-->
+<nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a href="">Home</a></li>
+        <li class="breadcrumb-item"><a href="">Hakkımızda</a></li>
+        <li class="breadcrumb-item"><a href="">İletişim</a></li>
+    </ol>
+</nav>
+
+
+     <!--script kodları başlangıcı-->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"> </script>
+</body>
+</html>

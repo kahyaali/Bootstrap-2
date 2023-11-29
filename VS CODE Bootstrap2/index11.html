@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox ve RadioButton</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 70px;
+      }
+    </style>
+</head>
+<body>
+    <div class="form-check">
+        <!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+    <input type="checkbox" name="" id="ch1" class="form-check-input">
+     <label class="form-check-lable" for="ch1">Default CheckBox</label>
+</div>
+<div class="form-check">
+    <!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+    <!--inputun checked dediğimiz zaman direkt olarak seçili gelir-->
+<input type="checkbox" name="" id="ch2" class="form-check-input" checked> <!--checked dediğimiz için seçili olarak gelir-->
+ <label class="form-check-lable" for="ch2">Default CheckBox</label>
+ </div>
+ 
+ <div class="form-check">
+    <!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+    <!--inputun checked dediğimiz zaman direkt olarak seçili gelir-->
+<input type="checkbox" name="" id="ch3" class="form-check-input" checked disabled> <!--checked dediğimiz için seçili olarak gelir disable olarak gelir-->
+ <label class="form-check-lable" for="ch3">Default CheckBox</label>
+ </div>
+<hr>
+ <!---radio buton yapımı-->
+
+ <div class="form-check">
+    <!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+<input type="radio" name="rd" id="rd1" class="form-check-input">
+ <label class="form-check-lable" for="rd1">Default Radio</label>
+</div>
+
+<div class="form-check">
+<!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+<!--radio butona birkere tıklayınca seçilir tekrar tıklayınca seçimi kaldırmaz bu yüzden name kısımlarına aynı adı veririz birine
+tıklayınca seçer diğerine tıklayınca diğerinis seçer diğerinden seçimi kaldırır-->
+<input type="radio" name="rd" id="rd2" class="form-check-input" checked> <!--checked dediğimiz için seçili olarak gelir-->
+<label class="form-check-lable" for="rd2">Default Radio</label>
+</div>
+
+<div class="form-check">
+<!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+<!--inputun checked dediğimiz zaman direkt olarak seçili gelir-->
+<input type="radio" name="rd" id="rd3" class="form-check-input" disabled> <!--disabled dediğimiz için disable olarak gelir-->
+<label class="form-check-lable" for="rd3">Default Radio</label>
+</div>
+<hr>
+
+<h1>Form Swich Kontrol</h1>
+<div class="form-check form-switch">
+    <!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+    <!--switch şeklinde gelir tıklayınca açıyor tıklayınca kapatıyor-->
+ <input type="checkbox" name="" id="sw1" class="form-check-input">
+ <label class="form-check-lable" for="sw1">Default Switch</label>
+</div>
+
+<div class="form-check form-switch">
+<!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+<!--inputun checked dediğimiz zaman direkt olarak seçili gelir-->
+<input type="checkbox" name="" id="sw2" class="form-check-input" checked> <!--checked dediğimiz için seçili olarak gelir-->
+<label class="form-check-lable" for="sw2">Default switch</label>
+</div>
+<hr>
+
+<h6>yan yana gelmesi için</h6>
+<!--alt alta değil yan yana gelmesi için-->
+<div class="form-check form-check-inline"> <!--form-check-inline dediğimizde alt alta değil yan yana gelirler-->
+    <!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+ 
+ <input type="checkbox" name="" id="sw3" class="form-check-input">
+ <label class="form-check-lable" for="sw3">Default Switch</label>
+</div>
+
+<div class="form-check form-check-inline">
+<!--lable'da for ile elementte id değerinin eşleştirmesi label'a tıklayınca element aktif olsun diye-->
+<!--inputun checked dediğimiz zaman direkt olarak seçili gelir-->
+<input type="checkbox" name="" id="sw4" class="form-check-input" checked> <!--checked dediğimiz için seçili olarak gelir-->
+<label class="form-check-lable" for="sw4">Default switch</label>
+</div>
+<hr>
+<p>
+    <input type="checkbox" class="btn-check" name="btn-check" id="btn-check" autocomplete="off">
+    <label for="btn-check" class="btn btn-primary">Single Toggle</label>
+</p>
+
+<p>
+    <input type="checkbox" class="btn-check" name="btn-check" id="btn-check1" autocomplete="off">
+    <label for="btn-check1" class="btn btn-outline-primary">Single Toggle</label>
+</p>
+
+<p>
+    <div class="btn-group">
+        <input type="radio" name="options" id="option1" class="btn-check" autocomplete="off" checked>
+        <label for="option1" class="btn btn-danger">Checked</label>
+
+        <input type="radio" name="options" id="option2" class="btn-check" autocomplete="off">
+        <label for="option2" class="btn btn-danger">Radio</label>
+
+        <input type="radio" name="options" id="option3" class="btn-check" autocomplete="off">
+        <label for="option3" class="btn btn-danger">Radio</label>
+    </div>
+</p>
+
+
+
+    <!--script kodları başlangıcı-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"> </script>
+</body>
+</html>

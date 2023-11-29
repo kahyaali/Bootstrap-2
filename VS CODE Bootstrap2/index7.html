@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar ve Boyutlandırma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       <style>
+           body{
+               padding: 70px;
+           }
+       </style>
+</head>
+<body>
+    <!--body'nin genişliğine oranla veriyor genişliği-->
+   <div class="bg-success mb-2 p-4 w-25"></div>
+   <div class="bg-success mb-2 p-4 w-50"></div>
+   <div class="bg-success mb-2 p-4 w-75"></div>
+   <div class="bg-success mb-2 p-4 w-100"></div>
+   <hr>
+   <!--d-inline-block diyerek yan yana gelmelerini sağladık-->
+   <div style="height: 400px;" class="bg-warning">
+    <div class="bg-primary d-inline-block p-4 h-25"></div>
+    <div class="bg-primary d-inline-block p-4 h-50"></div>
+    <div class="bg-primary d-inline-block p-4 h-75"></div>
+    <div class="bg-primary d-inline-block p-4 h-100"></div>
+</div>
+<hr>
+<br><br>
+<!--table yapımı 1-->
+<h6>Tablo1</h6>
+<table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>1</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>2</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>3</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>4</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+    </tbody>
+</table>
+<hr>
+<br><br>
+<!--table yapımı 2-->
+<h6>tablo2</h6>
+<table class="table table-primary">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>1</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>2</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>3</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>4</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+    </tbody>
+</table>
+<hr>
+<br><br>
+<!--table yapımı 3-->
+<h6>tablo3</h6>
+<table class="table">
+    <thead>
+      <tr class="table-secondary"> <!--başlık kısmını renklendirdi-->
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>1</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>2</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>3</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>4</td>
+    <td>Deneme Deneme</td>
+    <td class="table-danger">deneme@deneme.com</td> <!--herhangi bir satırın sütünu içinde ayrı olarak renklendirme yapabiliriz-->
+    <td>İstanbul</td>
+  </tr>
+    </tbody>
+</table>
+<hr>
+<br><br>
+<!--table yapımı 4-->
+<h6>tablo4</h6>
+<!--table-striped dersem satırları farklı renkler yapar çift haneli olanlar başka renk tek haneli olanlar başka renk olur
+table-hover dersek satırlara geldiğimizde satırlar renklenir satır üzerine geldiğimiz belli olur
+table-bordered dediğimizde ise tabloyu border çizgileri ile kaplar
+border-danger diyerek bordera renk veriyoruz-->
+<table class="table table-striped table-hover table-bordered border-danger"> 
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>1</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>2</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>3</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>4</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+    </tbody>
+</table>
+<!--table yapımı 5-->
+<h6>tablo5</h6>
+<!--table-striped dersem satırları farklı renkler yapar çift haneli olanlar başka renk tek haneli olanlar başka renk olur
+table-hover dersek satırlara geldiğimizde satırlar renklenir satır üzerine geldiğimiz belli olur
+table-bordered dediğimizde ise tabloyu border çizgileri ile kaplar
+border-danger diyerek bordera renk veriyoruz-->
+<table class="table table-bordered border-primary"> 
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>1</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>2</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>3</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>4</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+    </tbody>
+</table>
+<!--table yapımı 6-->
+<h6>tablo6</h6>
+<!--tabloda border olmasını istemiyrosak table-borderless diyoruz-->
+<table class="table table-borderless"> 
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>1</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>2</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>3</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+  <td>4</td>
+    <td>Deneme Deneme</td>
+    <td>deneme@deneme.com</td>
+    <td>İstanbul</td>
+  </tr>
+    </tbody>
+</table>
+
+<!--script kodları başlangıcı-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
